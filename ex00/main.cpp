@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:14:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/29 20:20:56 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/29 20:32:44 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,14 @@ int main(void)
 	// Drain energy
 	for (int i = 0; i < 10; ++i)
 		bartolo.attack("Juancar");
+
+	// Copy constructor
+	ClapTrap cloneBartolo(bartolo);
+	cloneBartolo.attack("Gerardo");
+
+	// Copy assignment
+	cloneBartolo = philip;
+	cloneBartolo.attack("Philip");
 
 	// Test damage to death
 	philip.takeDamage(20);

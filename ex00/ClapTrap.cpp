@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 17:40:37 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/29 20:18:05 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/29 20:25:37 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,14 @@ void	ClapTrap::attack(const std::string &target)
 {
 	if (!_hitPoints)
 	{
-		std::cout << "ClapTrap " << _name << " has no hit points to attack!" << std::endl;
+		std::cout	<< "ClapTrap " << _name 
+					<< " has no hit points to attack!" << std::endl;
 		return;
 	}
 	if (!_energyPoints)
 	{
-		std::cout << "ClapTrap " << _name << " has no energy points left!" << std::endl;
+		std::cout	<< "ClapTrap " << _name
+					<< " has no energy points left!" << std::endl;
 		return;
 	}
 	_energyPoints--;
@@ -97,12 +99,14 @@ void	ClapTrap::beRepaired(unsigned int amount)
 {
 	if (!_hitPoints)
 	{
-		std::cout << "ClapTrap " << _name << " is dead and cannot be repaired!" << std::endl;
+		std::cout	<< "ClapTrap " << _name
+					<< " is dead and cannot be repaired!" << std::endl;
 		return;
 	}
 	if (!_energyPoints)
 	{
-		std::cout << "ClapTrap " << _name << " has no energy points left!" << std::endl;
+		std::cout	<< "ClapTrap " << _name
+					<< " has no energy points left!" << std::endl;
 		return;
 	}
 	_energyPoints--;
