@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:14:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/29 20:32:44 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/30 20:24:17 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(void)
 	ClapTrap cloneBartolo(bartolo);
 	cloneBartolo.attack("Gerardo");
 
-	// Copy assignment
+	// Copy assignment operator
 	cloneBartolo = philip;
 	cloneBartolo.attack("Philip");
 
