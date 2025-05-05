@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:14:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/30 20:39:51 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/05 18:10:30 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main(void)
 	ct.attack("TargetA");
 	st.attack("TargetB");
 
-	std::cout << "\n-- Testing special guardGate() --\n";
+	std::cout << "\n-- Testing guardGate() --\n";
 	st.guardGate();
 
 	std::cout << "\n-- Testing takeDamage() and beRepaired() --\n";
