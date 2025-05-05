@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 19:03:56 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/05 19:29:23 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/05 19:40:05 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &other)
 {
 	if (this != &other)
 	{
-		ClapTrap::operator=(other);		// assign all Clap //
+		ClapTrap::operator=(other);		// assign ClapTrap //
 		ScavTrap::operator=(other);		// does not re-assign ClapTrap because...
 		FragTrap::operator=(other);		// ..."virtual" inheritance
 		_name = other._name;
