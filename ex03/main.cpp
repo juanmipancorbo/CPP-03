@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:14:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/05 19:26:56 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/06 17:45:01 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 int main(void)
 {
 	std::cout << "\n-- Create DiamondTrap --\n";
-	DiamondTrap dt("Gem");
+	DiamondTrap dt("Gemma");
 
 	std::cout << "\n-- Test attack() (from ScavTrap) --\n";
-	dt.attack("Target");
+	dt.attack("Birds");
 
 	std::cout << "\n-- Test whoAmI() --\n";
 	dt.whoAmI();
@@ -30,7 +30,7 @@ int main(void)
 
 	std::cout << "\n-- Test copy & assignment --\n";
 	DiamondTrap dt2(dt);
-	DiamondTrap dt3("Temp");
+	DiamondTrap dt3("Copppy");
 	dt3 = dt;
 
 	std::cout << "\n--whoAmI and attack --\n";

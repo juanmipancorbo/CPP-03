@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 17:40:52 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/05 17:35:44 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/06 17:29:13 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 class ClapTrap
 {
-	protected:											// Change to protected
+	protected:											// Protected
 		std::string		_name;
 		unsigned int	_hitPoints;
 		unsigned int	_energyPoints;

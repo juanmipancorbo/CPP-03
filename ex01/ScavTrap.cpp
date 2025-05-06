@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 19:53:51 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/05 18:48:21 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/06 17:19:00 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ ScavTrap::ScavTrap()
 // Name constructor
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
-	_name = name;
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;

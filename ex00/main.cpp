@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:14:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/30 20:24:17 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/06 16:50:56 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(void)
 	ClapTrap philip("Philip");
 	ClapTrap bartolo("Bartolo");
 
-	philip.attack("Bartolo");
+	philip.attack("Genaro");
 	bartolo.takeDamage(5);
 	bartolo.beRepaired(3);
 
@@ -31,7 +31,7 @@ int main(void)
 
 	// Copy assignment operator
 	cloneBartolo = philip;
-	cloneBartolo.attack("Philip");
+	cloneBartolo.attack("Carlos");
 
 	// Test damage to death
 	philip.takeDamage(20);
