@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 19:03:56 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/06 17:53:59 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/06/02 17:33:13 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,14 @@
 // Constructor
 DiamondTrap::DiamondTrap(std::string name)
 	: ClapTrap(name + "_clap_name")
-	, ScavTrap()
-	, FragTrap()
 	, _name(name)
 {
-	_hitPoints    = FragTrap::_hitPoints;		// 100
-	_energyPoints = ScavTrap::_energyPoints;	// 50
-	_attackDamage = FragTrap::_attackDamage;	// 30
+	this->_hitPoints    = FragTrap::_hitPoints;		// 100
+	this->_energyPoints = ScavTrap::_energyPoints;	// 50
+	this->_attackDamage = FragTrap::_attackDamage;	// 30
 
-	std::cout << "DiamondTrap " << _name << " constructed" << std::endl;
+	std::cout	<< "DiamondTrap " << _name << " constructed with "
+				<< _energyPoints << " Enerty Points" << std::endl;
 }
 
 // Copy constructor

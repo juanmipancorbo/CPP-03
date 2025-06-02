@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 17:40:52 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/06 17:04:42 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/08 17:31:39 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 
 class ClapTrap
 {
-	protected:											// Change to protected
-		std::string		_name;
+	protected:											// Change to protected 
+		std::string		_name;							// for derivative access.
 		unsigned int	_hitPoints;
 		unsigned int	_energyPoints;
 		unsigned int	_attackDamage;
@@ -29,7 +29,7 @@ class ClapTrap
 		ClapTrap(const ClapTrap &other);				// Copy constructor
 		ClapTrap & operator=(const ClapTrap &other);	// Copy assignment operator
 		virtual ~ClapTrap();							// Virtual Destructor to assure 
-														// the correct destruction
+														// the correct destruction.
 		// Other functions
 		void		attack(const std::string &target);
 		void		takeDamage(unsigned int amount);

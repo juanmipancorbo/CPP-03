@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 19:53:56 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/30 20:12:14 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/08 17:32:18 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class ScavTrap : public ClapTrap
 		~ScavTrap();									// Destructor
 
 		// Other functions
-		void		attack(const std::string &target);
+		void		attack(const std::string &target);	// Override of method
 		void		guardGate();
 };
 
